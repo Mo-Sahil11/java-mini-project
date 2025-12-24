@@ -1,7 +1,6 @@
-# java-mini-project
- Employee Management System with Java
-
 # Employee Management System
+
+A comprehensive **Employee Management System** built with Java, demonstrating Object-Oriented Programming principles, thread safety, file I/O, and exception handling.
 
 This project implements an **Employee Management System** using Object-Oriented Programming (OOP) in Java. The system includes an abstract `Employee` class hierarchy with `FullTimeEmployee` and `PartTimeEmployee` as derived classes. It also demonstrates advanced features like inner classes, thread-safe operations using locks, file I/O, and exception handling.
 
@@ -133,6 +132,58 @@ EmployeeManager.PayrollCalculator calculator = manager.getPayrollCalculator();
 System.out.println("Total Payroll: $" + calculator.calculateTotalPayroll());
 ```
 
+## Getting Started
+
+### Prerequisites
+- Java JDK 8 or higher
+- Any Java IDE (IntelliJ IDEA, Eclipse, VS Code) or command line
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Mo-Sahil11/java-mini-project.git
+cd java-mini-project
+```
+
+2. Navigate to the project directory:
+```bash
+cd Employee_Management_System
+```
+
+3. Compile the Java files:
+```bash
+javac -d . *.java
+```
+
+4. Run the application:
+```bash
+java in.ac.adit.pwj.miniproject.employees.Main
+```
+
+## Project Structure
+
+```
+java-mini-project/
+├── Employee_Management_System/
+│   ├── Main.java                    # Entry point
+│   ├── Employee.java                 # Abstract base class
+│   ├── FullTimeEmployee.java        # Full-time employee implementation
+│   ├── PartTimeEmployee.java        # Part-time employee implementation
+│   ├── EmployeeManager.java         # Manager class with operations
+│   └── InvalidSalaryException.java   # Custom exception
+├── LICENSE                           # MIT License
+├── README.md                         # This file
+└── .gitignore                        # Git ignore rules
+```
+
+## Technologies Used
+
+- **Java**: Core programming language
+- **Object-Oriented Programming**: Classes, inheritance, polymorphism
+- **Concurrency**: ReentrantLock for thread safety
+- **File I/O**: Object serialization for data persistence
+
 ## Future Enhancements
 
 - Database integration for better data persistence
@@ -142,3 +193,16 @@ System.out.println("Total Payroll: $" + calculator.calculateTotalPayroll());
 - Employee attendance tracking
 - Leave management system
 - Performance evaluation system
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+**Mohammed Sahil Malek**
+- GitHub: [@Mo-Sahil11](https://github.com/Mo-Sahil11)
